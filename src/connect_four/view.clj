@@ -6,4 +6,4 @@
   (s/join "|" (replace {nil \_ 1 \X 2 \O} row)))
 
 (defn display [board]
-  (println (s/join "\n" (map format-row (u/transpose board)))))
+  (println (s/join "\n" (map format-row board))))
